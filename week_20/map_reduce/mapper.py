@@ -8,9 +8,10 @@ for line in sys.stdin:
     #strip white spaces at beginning and end of line
     line = line.strip()
 
-    #split each line into words
-    #words = line.split()
+    #tokenize each line into words
     words =  word_tokenize(line)
     for word in words:
-        print(word + "\t1")
+        #Taking words that are alphabets and make it lower case
+        if word.isalpha():
+            print(word.lower() + "\t1")
 

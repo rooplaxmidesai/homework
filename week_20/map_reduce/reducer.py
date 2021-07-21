@@ -6,8 +6,6 @@ import string
 from collections import Counter
 #import pandas as pd
 
-current_word = None
-current_count = 0
 word = None
 print("Reducer!")
 words = []
@@ -16,10 +14,13 @@ for line in sys.stdin:
     line = line.strip()
 
     word, count = line.split("\t",1)
-    words.append(word.lower())
+    words.append(word)
     
+#other way to get word count from high to low is doing value_counts on pandas series
 #print(pd.Series(words).value_counts())
+#Get the counter for each word in the list
 word_cnt = Counter(words)
+#This prints word count ordered from highest count to lowest count
 print(word_cnt)
     
 
