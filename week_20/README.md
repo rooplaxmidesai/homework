@@ -11,7 +11,7 @@
 1. How to call the program
    * Go to the folder where these files are located and then run the below command
    * cat ./cats_txt.txt|./mapper.py|sort|./reducer.py
-   * !['Example1'](Week20_Question2_1.png)
+   * !['Screenshot1'](./Week20_Question2_1.PNG?raw=true "Screenshot 1")
 
 2.mapper
    * mapper takes the input from cats_txt.txt file, tokenizes(puncutations are also tokenized using work_tokenize from nltk) and prints only alpha words, changes it to lowercase and prints it
@@ -24,7 +24,7 @@
 1. How to call the program
    * Go to the folder where these files are located and then run below command
    * python week20_homework_Q1.py cats_txt.txt
-   * !['Example2'](Week20_Question2_2.png)
+   * !['Screenshot2'](./Week20_Question2_2.PNG?raw=true "Screenshot 2")
 
 2. Program checks for command line parameters and takes sys.argv[1] which is filename in this case.
 3. Open the file with encoding 
